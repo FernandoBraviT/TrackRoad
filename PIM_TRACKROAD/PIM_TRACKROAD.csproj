@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4B05188D-5B23-4C34-9BFF-EB15926CFD28}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PIM_TRACKROAD</RootNamespace>
+    <AssemblyName>PIM_TRACKROAD</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Telas\frmAlterarCombustivel.cs" />
+    <Compile Include="Telas\frmAlterarCombustivel.Designer.cs">
+      <DependentUpon>frmAlterarCombustivel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmAlterarContratos.cs" />
+    <Compile Include="Telas\frmAlterarContratos.Designer.cs">
+      <DependentUpon>frmAlterarContratos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmAlterarMotorista.cs" />
+    <Compile Include="Telas\frmAlterarMotorista.Designer.cs">
+      <DependentUpon>frmAlterarMotorista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmAlterarUsuario.cs" />
+    <Compile Include="Telas\frmAlterarUsuario.Designer.cs">
+      <DependentUpon>frmAlterarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmAlterarViagem.cs" />
+    <Compile Include="Telas\frmAlterarViagem.Designer.cs">
+      <DependentUpon>frmAlterarViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmConsultarCombustivel.cs" />
+    <Compile Include="Telas\frmConsultarCombustivel.Designer.cs">
+      <DependentUpon>frmConsultarCombustivel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmConsultarContratos.cs" />
+    <Compile Include="Telas\frmConsultarContratos.Designer.cs">
+      <DependentUpon>frmConsultarContratos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmConsultarMotorista.cs" />
+    <Compile Include="Telas\frmConsultarMotorista.Designer.cs">
+      <DependentUpon>frmConsultarMotorista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmConsultarUsuario.cs" />
+    <Compile Include="Telas\frmConsultarUsuario.Designer.cs">
+      <DependentUpon>frmConsultarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmConsultarViagem.cs" />
+    <Compile Include="Telas\frmConsultarViagem.Designer.cs">
+      <DependentUpon>frmConsultarViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmExcluirCombustivel.cs" />
+    <Compile Include="Telas\frmExcluirCombustivel.Designer.cs">
+      <DependentUpon>frmExcluirCombustivel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmExcluirContratos.cs" />
+    <Compile Include="Telas\frmExcluirContratos.Designer.cs">
+      <DependentUpon>frmExcluirContratos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmExcluirMotorista.cs" />
+    <Compile Include="Telas\frmExcluirMotorista.Designer.cs">
+      <DependentUpon>frmExcluirMotorista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmExcluirUsuario.cs" />
+    <Compile Include="Telas\frmExcluirUsuario.Designer.cs">
+      <DependentUpon>frmExcluirUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmExcluirViagem.cs" />
+    <Compile Include="Telas\frmExcluirViagem.Designer.cs">
+      <DependentUpon>frmExcluirViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmIncluirCombustivel.cs" />
+    <Compile Include="Telas\frmIncluirCombustivel.Designer.cs">
+      <DependentUpon>frmIncluirCombustivel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmIncluirContratos.cs" />
+    <Compile Include="Telas\frmIncluirContratos.Designer.cs">
+      <DependentUpon>frmIncluirContratos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmIncluirMotorista.cs" />
+    <Compile Include="Telas\frmIncluirMotorista.Designer.cs">
+      <DependentUpon>frmIncluirMotorista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmIncluirUsuario.cs" />
+    <Compile Include="Telas\frmIncluirUsuario.Designer.cs">
+      <DependentUpon>frmIncluirUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmIncluirViagem.cs" />
+    <Compile Include="Telas\frmIncluirViagem.Designer.cs">
+      <DependentUpon>frmIncluirViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmPrincipal.cs" />
+    <Compile Include="Telas\frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Telas\frmAlterarCombustivel.resx">
+      <DependentUpon>frmAlterarCombustivel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmAlterarContratos.resx">
+      <DependentUpon>frmAlterarContratos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmAlterarMotorista.resx">
+      <DependentUpon>frmAlterarMotorista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmAlterarUsuario.resx">
+      <DependentUpon>frmAlterarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmAlterarViagem.resx">
+      <DependentUpon>frmAlterarViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmConsultarCombustivel.resx">
+      <DependentUpon>frmConsultarCombustivel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmConsultarContratos.resx">
+      <DependentUpon>frmConsultarContratos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmConsultarMotorista.resx">
+      <DependentUpon>frmConsultarMotorista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmConsultarUsuario.resx">
+      <DependentUpon>frmConsultarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmConsultarViagem.resx">
+      <DependentUpon>frmConsultarViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmExcluirCombustivel.resx">
+      <DependentUpon>frmExcluirCombustivel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmExcluirContratos.resx">
+      <DependentUpon>frmExcluirContratos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmExcluirMotorista.resx">
+      <DependentUpon>frmExcluirMotorista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmExcluirUsuario.resx">
+      <DependentUpon>frmExcluirUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmExcluirViagem.resx">
+      <DependentUpon>frmExcluirViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmIncluirCombustivel.resx">
+      <DependentUpon>frmIncluirCombustivel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmIncluirContratos.resx">
+      <DependentUpon>frmIncluirContratos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmIncluirMotorista.resx">
+      <DependentUpon>frmIncluirMotorista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmIncluirUsuario.resx">
+      <DependentUpon>frmIncluirUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmIncluirViagem.resx">
+      <DependentUpon>frmIncluirViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
